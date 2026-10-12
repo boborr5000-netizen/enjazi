@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  background: #f5f3ed;
+  color: #17213a;
+  line-height: 1.8;
+}
+
+.hero {
+  background: linear-gradient(135deg, #101a35, #263c65);
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+  border-radius: 0 0 30px 30px;
+}
+
+.logo {
+  background: #e4bd68;
+  color: #101a35;
+  width: 65px;
+  height: 65px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin: 8px 0;
+}
+
+.hero h2 {
+  margin-top: 25px;
+}
+
+.container {
+  width: 92%;
+  max-width: 900px;
+  margin: 25px auto;
+}
+
+.student-info,
+.card,
+.stat {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 15px #17213a10;
+}
+
+.student-info strong {
+  color: #9a742b;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.stat {
+  text-align: center;
+  margin: 0;
+}
+
+.stat span {
+  color: #68728a;
+  font-size: 13px;
+}
+
+.stat h2 {
+  color: #17213a;
+  font-size: 28px;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 21px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 13px;
+  margin: 7px 0;
+  border: 1px solid #d8dce5;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+button {
+  background: #17213a;
+  color: white;
+  border: none;
+  padding: 12px 17px;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 5px 3px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #9a742b;
+  transform: translateY(-1px);
+}
+
+#taskForm {
+  display: flex;
+  gap: 8px;
+}
+
+#taskForm input {
+  flex: 1;
+  min-width: 0;
+}
+
+ul {
+  padding-right: 22px;
+}
+
+li {
+  margin: 10px 0;
+  overflow-wrap: anywhere;
+}
+
+.task-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.task-row input {
+  width: 20px;
+}
+
+.task-row span {
+  flex: 1;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #7b8797;
+}
+
+.delete {
+  background: #b63d3d;
+}
+
+.focus {
+  text-align: center;
+}
+
+.timer {
+  font-size: 52px;
+  font-weight: bold;
+  color: #9a742b;
+  margin: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+footer {
+  text-align: center;
+  color: #737d91;
+  font-size: 13px;
+  padding: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  #taskForm {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .student-info,
+  .card {
+    padding: 16px;
+  }
+}

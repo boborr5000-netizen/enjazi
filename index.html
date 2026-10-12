@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنجازي | مساعد الطالب الذكي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="logo">✓</div>
+        <h1>إنجازي</h1>
+        <p>مساعد الطالب الذكي</p>
+
+        <h2>أهلًا بك في مساحة إنجازك ✨</h2>
+        <p>نظّم وقتك، أنجز أهدافك، واصنع مستقبلك.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="student-info">
+            <p>
+                إعداد الطالب:
+                <strong>ريان عبدالرحيم عبدالعال</strong>
+            </p>
+
+            <p>
+                إشراف الأستاذ:
+                <strong>أ. حاتم الجهني</strong>
+            </p>
+        </section>
+
+        <section class="stats">
+
+            <div class="stat">
+                <span>إجمالي المهام</span>
+                <h2 id="total">0</h2>
+            </div>
+
+            <div class="stat">
+                <span>المهام المكتملة</span>
+                <h2 id="completed">0</h2>
+            </div>
+
+            <div class="stat">
+                <span>نسبة الإنجاز</span>
+                <h2 id="percentage">0%</h2>
+            </div>
+
+        </section>
+
+        <section class="card">
+            <h2>📋 واجباتي ومهامي</h2>
+
+            <form id="taskForm">
+                <input
+                    id="taskInput"
+                    type="text"
+                    placeholder="اكتب اسم الواجب أو المهمة..."
+                    required
+                >
+
+                <button type="submit">إضافة مهمة +</button>
+            </form>
+
+            <ul id="taskList"></ul>
+        </section>
+
+        <section class="card">
+            <h2>🗓️ جدول الحصص</h2>
+
+            <label for="day">اختر اليوم:</label>
+
+            <select id="day">
+                <option>الأحد</option>
+                <option>الاثنين</option>
+                <option>الثلاثاء</option>
+                <option>الأربعاء</option>
+                <option>الخميس</option>
+            </select>
+
+            <input
+                id="subject"
+                type="text"
+                placeholder="اكتب اسم المادة..."
+            >
+
+            <button id="addSubject" type="button">
+                إضافة للمجدول
+            </button>
+
+            <ul id="scheduleList"></ul>
+        </section>
+
+        <section class="card focus">
+            <h2>⏱️ مؤقت المذاكرة</h2>
+
+            <p class="timer" id="timer">25:00</p>
+
+            <button id="startTimer" type="button">
+                ابدأ
+            </button>
+
+            <button id="pauseTimer" type="button">
+                إيقاف مؤقت
+            </button>
+
+            <button id="resetTimer" type="button">
+                إعادة ضبط
+            </button>
+        </section>
+
+        <footer>
+            <p>إنجازي | مشروع تقني تعليمي</p>
+            <p>إعداد الطالب: ريان عبدالرحيم عبدالعال</p>
+            <p>بإشراف الأستاذ: أ. حاتم الجهني</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
